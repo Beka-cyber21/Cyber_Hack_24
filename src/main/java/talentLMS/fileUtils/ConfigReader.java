@@ -14,7 +14,7 @@ public class ConfigReader {
 
     static {
         try {
-            String pass = "src/main/resources/app.properties";
+            String pass = "src/main/resources/driver.properties";
             FileInputStream fis = new FileInputStream(pass);
             properties = new Properties();
             properties.load(fis);
