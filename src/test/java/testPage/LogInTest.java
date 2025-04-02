@@ -2,6 +2,7 @@ package testPage;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import talentLMS.pages.LogInPage;
@@ -16,6 +17,7 @@ public class LogInTest extends BaseTest {
                         ,webElementAction.sendKeys(logInPage.password, logInPage.truePassword)}
         };
     }
+    @BeforeSuite
     @Test(dataProvider = "log in user")
     public void baseLoginSite(String userLogin,String  userPassword){
         driver.get("https://asteam.talentlms.com/index");
