@@ -13,8 +13,7 @@ public class LogInTest extends BaseTest {
         return new Object[][]{
                 {randomizer.fakeLoginGenerate(),randomizer.fakePasswordGenerate()},
                 {randomizer.fakeLoginGenerate(),randomizer.fakePasswordGenerate()},
-                {webElementAction.sendKeys(logInPage.login, logInPage.trueLogin)
-                        ,webElementAction.sendKeys(logInPage.password, logInPage.truePassword)}
+                {logInPage.trueLogin,logInPage.truePassword}
         };
     }
     @BeforeSuite
