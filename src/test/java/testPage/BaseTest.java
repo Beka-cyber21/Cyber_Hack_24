@@ -14,6 +14,7 @@ public abstract class BaseTest {
     WebElementAction webElementAction = new WebElementAction();
     Randomizer randomizer = new Randomizer();
     LogInPage logInPage = new LogInPage();
+    NewInterfaceSite newInterfaceSite = new NewInterfaceSite();
 
     @BeforeSuite
     public void beforeSuite() {
