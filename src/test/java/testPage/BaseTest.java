@@ -8,13 +8,14 @@ import talentLMS.driverPage.MainDriver;
 import talentLMS.helper.Randomizer;
 import talentLMS.helper.WebElementAction;
 import talentLMS.pages.LogInPage;
+import talentLMS.pages.NewInterfacePage;
 
 public abstract class BaseTest {
     WebDriver driver;
     WebElementAction webElementAction = new WebElementAction();
     Randomizer randomizer = new Randomizer();
     LogInPage logInPage = new LogInPage();
-    NewInterfaceSite newInterfaceSite = new NewInterfaceSite();
+    NewInterfacePage newInterfacePage = new NewInterfacePage();
 
     @BeforeSuite
     public void beforeSuite() {
