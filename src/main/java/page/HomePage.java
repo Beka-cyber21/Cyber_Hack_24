@@ -34,4 +34,34 @@ public class HomePage extends BasePage{
     @FindBy(xpath = "//div[@class=\"tl-icons-block\"]/span/i[@class=\"icon-sliders-v tl-icon-stack-content\"]")
     public WebElement accountAndSettingsIcon;
 
+    @FindBy(xpath ="//div[@class=\"tl-bold-link\"]/a[normalize-space(text())=\"Users\"]")
+    public WebElement userLink;
+
+    @FindBy(xpath = "//div[@class=\"tl-bold-link\"]/a[normalize-space(text())=\"Courses\"]")
+    public WebElement coursesLink;
+
+    @FindBy(xpath = "//div[@class=\"tl-bold-link\"]/a[normalize-space(text())=\"Categories\"]")
+    public WebElement categoriesLink;
+
+    @FindBy(xpath = "//div[@class=\"tl-bold-link\"]/a[normalize-space(text())=\"Groups\"]")
+    public WebElement groupsLink;
+
+    @FindBy(xpath = "//div[@class=\"tl-bold-link\"]/a[normalize-space(text())=\"Branches\"]")
+    public WebElement branchesLink;
+
+    @FindBy(xpath = "//div[@class=\"tl-bold-link\"]/a[normalize-space(text())=\"Events engine\"]")
+    public WebElement eventsEngineLink;
+
+    @FindBy(xpath = "//div[@class=\"tl-bold-link\"]/a[normalize-space(text())=\"User types\"]")
+    public WebElement usersTypesLink;
+
+    @FindBy(xpath = "//div[@class=\"tl-bold-link\"]/a[normalize-space(text())=\"Import - Export\"]")
+    public WebElement import_ExportLinks;
+
+    @FindBy(xpath = "//div[@class=\"tl-bold-link\"]/a[normalize-space(text())=\"Reports\"]")
+    public WebElement reportsLinks;
+
+    @FindBy(xpath = "//div[@class=\"tl-bold-link\"]/a[normalize-space(text())=\"Account & Settings\"]")
+    public WebElement accountAndSettingsLinks;
+
 }
