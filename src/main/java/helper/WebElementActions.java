@@ -1,5 +1,6 @@
 package helper;
 
+import com.github.javafaker.Faker;
 import drivers.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -32,6 +33,10 @@ public class WebElementActions {
         waitElementToBeDisplayed(element);
         waitButtonToBeClickAble(element);
         element.click();
+        return this;
+    }
+    public WebElementActions sendText(WebElement element , String text){
+        actions.sendKeys(element ,text).perform();
         return this;
     }
 
