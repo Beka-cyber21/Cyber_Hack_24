@@ -19,9 +19,13 @@ public class LoginPage extends BasePage{
     @FindBy(xpath = "//div[@class=\"text-center\"]/a")
     public WebElement forgotPassword;
 
-    public LoginPage loginInLogPage(String login,String password){
-
+    public LoginPage logInLoginPage(String userLog,String userPass) {
+     webElementActions.sendText(login,userLog)
+             .sendText(password,userPass)
+             .clickBtn(submit);
+     return this;
     }
+
 
 
 }
