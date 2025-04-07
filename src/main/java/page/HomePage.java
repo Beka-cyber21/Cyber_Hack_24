@@ -3,7 +3,7 @@ package page;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePage {
+public class HomePage extends BasePage{
     @FindBy(xpath = "//div[@class=\"tl-icons-block\"]/span/i[@class=\"icon-user tl-icon-stack-content\"]")
     public WebElement userIcon;
 

@@ -43,7 +43,7 @@ public class WebElementActions {
 
     public WebElementActions moveToElementClick(WebElement element) {
         actions.moveToElement(element).click().perform();
-        return this;
+        return new WebElementActions();
     }
 
 
