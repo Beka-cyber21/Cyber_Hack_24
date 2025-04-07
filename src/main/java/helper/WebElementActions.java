@@ -35,8 +35,5 @@ public class WebElementActions {
         return this;
     }
 
-    public WebElementActions sendKeysTag(WebElement element, String test) {
-        actions.sendKeys(element, test);
-        return this;
-    }
+
 }
