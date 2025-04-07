@@ -27,4 +27,16 @@ public class WebElementActions {
                         .visibilityOf(element));
         return this;
     }
+
+    public WebElementActions clickBtn(WebElement element) {
+        waitElementToBeDisplayed(element);
+        waitButtonToBeClickAble(element);
+        element.click();
+        return this;
+    }
+
+    public WebElementActions sendKeysTag(WebElement element, String test) {
+        actions.sendKeys(element, test);
+        return this;
+    }
 }
