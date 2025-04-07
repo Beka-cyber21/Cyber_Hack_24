@@ -35,9 +35,15 @@ public class WebElementActions {
         element.click();
         return this;
     }
-    public WebElementActions sendText(WebElement element , String text){
-        actions.sendKeys(element ,text).perform();
+
+    public WebElementActions sendText(WebElement element, String text) {
+        actions.sendKeys(element, text).perform();
         return this;
+    }
+
+    public WebElementActions moveToElementClick(WebElement element) {
+        actions.moveToElement(element).click().perform();
+        return new WebElementActions();
     }
 
 
