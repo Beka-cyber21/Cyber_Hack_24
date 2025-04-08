@@ -3,7 +3,7 @@ package page;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePageSub {
+public class HomePageSub extends BasePage{
     @FindBy(xpath = "//div[@class=\"hidden-phone\"]/a[normalize-space(text())=\"Add user\"]")
     public WebElement subAddUser;
 
