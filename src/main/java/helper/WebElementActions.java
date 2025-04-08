@@ -11,6 +11,7 @@ import java.time.Duration;
 
 public class WebElementActions {
     public Actions actions = new Actions(Driver.getDriver());
+    public WebDriverWait webDriverWait = new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(10));
 
     public WebElementActions waitButtonToBeClickAble(WebElement element) {
 
@@ -45,6 +46,7 @@ public class WebElementActions {
         actions.moveToElement(element).click().perform();
         return new WebElementActions();
     }
+
 
 
 }
