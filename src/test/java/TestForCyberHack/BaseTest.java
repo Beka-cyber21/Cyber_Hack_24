@@ -6,6 +6,7 @@ import helper.WebElementActions;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeSuite;
 import page.HomePage;
+import page.HomePageSub;
 import page.LoginPage;
 
 public abstract class BaseTest {
@@ -14,6 +15,8 @@ public abstract class BaseTest {
     LoginPage loginPage = new LoginPage();
     Faker faker = new Faker();
     HomePage homePage = new HomePage();
+    HomePageSub homePageSub = new HomePageSub();
+
 
     @BeforeSuite
     public void beforeSuite(){
